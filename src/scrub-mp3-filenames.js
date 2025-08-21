@@ -24,6 +24,9 @@ for (const file of files) {
   const fullPath = path.join(folder, file)
   const tags = NodeID3.read(fullPath)
 
+  /**
+   * Same as `file` but without extension
+   */
   const filename = path.parse(file).name
   const scrubbedFilename = scrubString(filename)
 
@@ -63,7 +66,7 @@ for (const file of files) {
   }
 
   // Update MP3 filename
-  if (newFilename !== filename) {
+  if (newFilename !== file) {
     fs.renameSync(fullPath, newPath)
     console.log(`Renamed file:    "${file}" -> "${newFilename}"`)
   } else {

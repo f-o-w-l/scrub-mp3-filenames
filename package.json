@@ -1,0 +1,18 @@
+{
+  "name": "scrub-mp3-filenames",
+  "version": "1.0.0",
+  "main": "scrub-mp3-filenames.js",
+  "type": "module",
+  "scripts": {
+    "scrub": "node scrub-mp3-filenames.js"
+  },
+  "author": "Oliver Fowler <olfowler@pm.me> (https://github.com/f-o-w-l)",
+  "license": "GPL-3.0-only",
+  "description": "Removes unwanted crap from your .mp3 filenames using track number metadata",
+  "dependencies": {
+    "node-id3": "^0.2.9"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.2.0"
+  }
+}

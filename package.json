@@ -4,7 +4,7 @@
   "main": "scrub-mp3-filenames.js",
   "type": "module",
   "scripts": {
-    "scrub": "node scrub-mp3-filenames.js"
+    "scrub": "node src/scrub-mp3-filenames.js"
   },
   "author": "Oliver Fowler <olfowler@pm.me> (https://github.com/f-o-w-l)",
   "license": "GPL-3.0-only",

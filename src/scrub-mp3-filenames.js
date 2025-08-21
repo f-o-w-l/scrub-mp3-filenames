@@ -42,7 +42,8 @@ for (const file of files) {
     }
   }
 
-  if (!trackNum) throw new Error(`Track number not found for file: ${file}`)
+  if (trackNum === null)
+    throw new Error(`Track number not found for file: ${file}`)
 
   const paddedTrackNum = trackNum.toString().padStart(2, '0')
   const newFilename = `${paddedTrackNum}. ${scrubbedFilename}.mp3`

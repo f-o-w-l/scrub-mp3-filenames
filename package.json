@@ -10,6 +10,7 @@
   "license": "GPL-3.0-only",
   "description": "Removes unwanted crap from your .mp3 filenames using track number metadata",
   "dependencies": {
+    "chalk": "^5.6.0",
     "node-id3": "^0.2.9"
   },
   "devDependencies": {
